@@ -52,8 +52,8 @@ BOARD_SYSTEM_DEVICE := /dev/block/mmcblk0p8
 BOARD_SYSTEM_FILESYSTEM := ext4
 
 TARGET_NO_KERNEL := true
-#TARGET_PREBUILT_KERNEL := $(LOCAL_PATH)/recovery/kernel
-#TARGET_RECOVERY_KERNEL := $(LOCAL_PATH)/recovery/kernel
+TARGET_PREBUILT_KERNEL := $(LOCAL_PATH)/recovery/kernel
+TARGET_RECOVERY_KERNEL := $(LOCAL_PATH)/recovery/kernel
 
 # Use this flag if the board has a ext4 partition larger than 2gb
 BOARD_HAS_LARGE_FILESYSTEM := true
@@ -81,18 +81,18 @@ BOARD_HAS_NO_SELECT_BUTTON := true
 ########################################################################################################
 
 # Use boot tools to make Intel-formatted images
-#DEVICE_BASE_BOOT_IMAGE := device/lenovo/k900/recovery/boot.img
-#DEVICE_BASE_RECOVERY_IMAGE := device/lenovo/k900/recovery/recovery.img
-#BOARD_CUSTOM_BOOTIMG_MK := device/lenovo/k900/intel-boot-tools/boot.mk
+DEVICE_BASE_BOOT_IMAGE := device/lenovo/k900/recovery/boot.img
+DEVICE_BASE_RECOVERY_IMAGE := device/lenovo/k900/recovery/recovery.img
+BOARD_CUSTOM_BOOTIMG_MK := device/lenovo/k900/intel-boot-tools/boot.mk
 
 
-#TARGET_KERNEL_CONFIG := i386_defconfig
+TARGET_KERNEL_CONFIG := i386_defconfig
 
 # Recovery configuration
 
-#TARGET_GRALLOC_FORCE_EFIFB_PIXEL_FORMAT := "BGRA"
+TARGET_GRALLOC_FORCE_EFIFB_PIXEL_FORMAT := "BGRA"
 
-#DEVICE_BASE_RECOVERY_IMAGE := $(LOCAL_PATH)/prebuilt/recovery.image
+DEVICE_BASE_RECOVERY_IMAGE := $(LOCAL_PATH)/prebuilt/recovery.image
 
-#BOARD_TOUCH_RECOVERY := true
-#	BOARD_RECOVERY_SWIPE := true
+BOARD_TOUCH_RECOVERY := true
+	BOARD_RECOVERY_SWIPE := true
